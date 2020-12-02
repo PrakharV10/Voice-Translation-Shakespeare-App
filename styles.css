@@ -47,3 +47,9 @@ nav img{
 .head-line h2{
     margin-top: -1rem;
 }
+
+.mic{
+    color:blue;
+    border-radius: 50%;
+    background-color: white;
+}
