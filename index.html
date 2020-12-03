@@ -3,40 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translation_mk2</title>
+    <title>Voice Translation App</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+</head>
 <body>
-    <header>
-        <nav>
-            <h1></h1>
-            <img src="https://instagram.fudr1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/87784059_822272964939689_3869051817505587200_n.jpg?_nc_ht=instagram.fudr1-1.fna.fbcdn.net&_nc_ohc=Yukz0XSt7IAAX9J87Uc&tp=1&oh=1dc2c2c82d12512856fef558c90d16ec&oe=5FF1164A" >
-        </nav>
+    <!-- blackBg class to be added after click -->
+    <header class="whiteBg" id="header-id">
+        <!-- hero-heading to be added after click -->
+        <h4 class="b4-click" id="hero-heading-id">Speaking</h4>
+
+        <!-- hero-text to be added after click -->
+        <div class="b4-click" id="hero-text-id">
+            <p id="input-content"></p>
+        </div>
+
+        <!-- mic-box to be added after click -->
+        <div class="b4-mic-box" id="mic-box-id">
+            <img src="images/mic.png" class="mic"/>
+        </div>
+
+        <!-- after-click to be added after click -->
+        <div class="mic-sub" id="mic-sub-id">
+            SPEAK
+        </div>
     </header>
 
-    <section class="hero-section">
-        <div class="head-line">
-            <h2>Hello! <br  />What can<br /> I translate for<br /> you today?</h2>
-        </div>
-        <div class="mic-div">
-            <i class="fa fa-microphone fa-2x mic" aria-hidden="true"></i>     
+    <!-- yellowBg to be added after click -->
+    <section class="blackBg" id="section-id">
+        
+        <!-- hero-heading2 to be added after click -->
+        <h4 class="b4-click" id="hero-heading2-id">Translated</h4>
+
+        <!-- hero-text2 to be added after click -->
+        <div class="b4-click" id="hero-text2-id">
+            <p id="output-content"></p>
         </div>
 
-        <h3 class="content"></h3>
-        
+        <!-- headphone-box to be added after click -->
+        <div class="b4-headphone-box" id="hp-box-id">
+            <img src = "/images/headphones.png" class="headphone" />
+        </div>
 
-        <div class="OutputText" id="outputText"></div>
-        
-        
+        <!-- after-click to be added after click -->
+        <div class="headphone-sub" id="hp-sub-id">
+            LISTEN
+        </div>
     </section>
-
-    <!-- <footer>
-        <div>
-            <h1>ABOUT</h1>
-            <p>Translate your text to Pirate Slang with a cool Speech to Text Translation!</p>
-        </div>  
-    </footer> -->
 
     <script src="app.js"></script>
 </body>

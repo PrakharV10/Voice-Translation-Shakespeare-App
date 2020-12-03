@@ -1,77 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
+body{
+    border : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root{
-    --primary-bg : #121212;
-    --primary-text : #E4E6EB;
-    --secondary-bg : #181818;
+    --yellow : #ffd21d;
+    --off-white : #fafafa;
 }
 
-body{
-    font-family: 'Source Serif Pro', serif;
-    margin :0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--primary-bg);
-    color : var(--primary-text);
-    text-align: center;
+header{
+    height : 325px;
 }
 
-nav{
-    padding: 1.5rem 1.5rem 0 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: var(--secondary-bg); */
-    border-bottom-left-radius: 15px;
+.blackBg{
+    background-color: #212121;
 }
 
-nav h1{
-    font-weight: lighter;
-    font-size: 1.5rem;
+.hero-heading{
     margin:0;
+    padding-top:1.0625rem;
+    color: var(--off-white);
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .04em;
 }
 
-nav img{
-    height: 35px;
-    border-radius: 50%;
-}
-
-.head-line{
-    text-align: left;
-    margin : 1.5rem;
-    font-size: 1rem;
-    width : 80%;
-}
-
-.head-line h2{
-    font-weight: lighter;
-    margin-top: -1rem;
-}
-
-.mic{
-    padding: 1rem 1.35rem;
-    background-color: rgb(85, 85, 252);
-    border-radius: 50%;
-}
-
-.mic-div{
-    margin: 7rem 0 3rem;
-}
-
-.content-box{
-    margin:4rem;
-    border:4rem;
-}
-
-.content{
-    color : #B0B3B8;
-    /* background-color: var(--secondary-bg); */
-    width:90%;
-    margin : auto;
-    font-weight: lighter;
-    font-size: 1.2rem;
-    border: 2rem;
+.hero-text{
+    color : var(--off-white);
+    /* font-family: 'Overlock SC' , serif; */
+    /* font-family: 'Alegreya', serif; */
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .04em;
+    padding : .5rem 2.75rem;
+    /* visibility: hidden; */
     text-transform: capitalize;
 }
 
+
+.mic-box{
+    position: absolute;
+    top : 243px;
+    left: 45vw;
+    text-align: center;
+    background-color: var(--yellow);
+    width : 50px;
+    padding : .5rem 0rem;
+    margin : .5rem auto 31px;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 4px 5px rgba(255, 210, 29, 0.25);
+}
+
+.mic {
+    height: 29px;
+    width: 29px;
+}
+
+section{
+    height: 50vh;
+    overflow: hidden;
+
+}
+
+.yellowBg{
+    background-color: var(--yellow);
+} 
+
+.hero-heading2{
+    margin:0;
+    padding-top:1.0625rem;
+    color: black;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .04em;
+}
+
+.hero-text2{
+    color : black;
+    font-family: 'Overlock SC' , serif;
+    font-size: 1.5rem;
+    letter-spacing: .04em;
+    padding : 1.5rem 2.75rem;
+    
+}
+
+.headphone-box{
+    position: absolute;
+    top : 568px;
+    left: 43vw;
+    text-align: center;
+    background-color: var(--yellow);
+    width : 50px;
+    padding : .5rem 0rem;
+    margin : .5rem auto 31px; 
+    border-radius: 50%; 
+    border : 2px solid black;
+}
+
+.headphone{
+    height: 29px;
+    width: 29px;
+}
+
+.after-click{
+    display: none;
+}
+
+/* Before clicks */
+.whiteBg{
+    background-color: var(--off-white);
+}
+
+.b4-click{
+    display:none;
+}
+
+.b4-mic-box{
+    text-align: center;
+    background-color: var(--yellow);
+    width : 50px;
+    padding : .5rem 0rem;
+    /* margin : .5rem auto 31px; */
+    position: absolute;
+    top: 8.5rem;
+    left: 9.6rem;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 4px 5px rgba(255, 210, 29, 0.25);
+}
+
+.mic-sub{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: .46em;
+    position: absolute;
+    top: 12.3rem;
+    left: 8.6rem;
+}
+
+.b4-headphone-box{
+    text-align: center;
+    background-color: var(--yellow);
+    width : 50px;
+    padding : .5rem 0rem;
+    /* margin : .5rem auto 31px; */
+    position: relative;
+    top: 8.5rem;
+    left: 9.6rem;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 4px 5px rgba(255, 210, 29, 0.25);
+}
+
+.headphone-sub{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: var(--off-white);
+    letter-spacing: .46em;
+    position: relative;
+    top: 9.5rem;
+    left: 8.3rem;
+}
