@@ -6,7 +6,7 @@
     <title>Translation_mk2</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    </head>
 <body>
     <header>
         <nav>
@@ -17,25 +17,27 @@
 
     <section class="hero-section">
         <div class="head-line">
-            <h2>Hello! <br  />What can I translate for you today?</h2>
+            <h2>Hello! <br  />What can<br /> I translate for<br /> you today?</h2>
         </div>
-        <div class="mic">
-            <i class="fa fa-microphone" aria-hidden="true"></i>
+        <div class="mic-div">
+            <i class="fa fa-microphone fa-2x mic" aria-hidden="true"></i>     
         </div>
-        <div>
-            <textarea name="Write" id="writeText" cols="30" rows="10" placeholder="Say or write something!"></textarea>
-        </div>
-        <button id="btn-translate">Translate!</button>
+
+        <h3 class="content"></h3>
+        
 
         <div class="OutputText" id="outputText"></div>
         
+        
     </section>
 
-    <footer>
+    <!-- <footer>
         <div>
             <h1>ABOUT</h1>
             <p>Translate your text to Pirate Slang with a cool Speech to Text Translation!</p>
         </div>  
-    </footer>
+    </footer> -->
+
+    <script src="app.js"></script>
 </body>
 </html>

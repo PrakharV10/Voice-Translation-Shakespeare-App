@@ -45,11 +45,33 @@ nav img{
 }
 
 .head-line h2{
+    font-weight: lighter;
     margin-top: -1rem;
 }
 
 .mic{
-    color:blue;
+    padding: 1rem 1.35rem;
+    background-color: rgb(85, 85, 252);
     border-radius: 50%;
-    background-color: white;
 }
+
+.mic-div{
+    margin: 7rem 0 3rem;
+}
+
+.content-box{
+    margin:4rem;
+    border:4rem;
+}
+
+.content{
+    color : #B0B3B8;
+    /* background-color: var(--secondary-bg); */
+    width:90%;
+    margin : auto;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    border: 2rem;
+    text-transform: capitalize;
+}
+
