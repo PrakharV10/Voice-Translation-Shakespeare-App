@@ -46,7 +46,7 @@ header{
 .mic-box{
     position: absolute;
     top : 243px;
-    left: 45vw;
+    left: 43vw;
     text-align: center;
     background-color: var(--yellow);
     width : 50px;
@@ -83,7 +83,8 @@ section{
 
 .hero-text2{
     color : black;
-    font-family: 'Overlock SC' , serif;
+    /* font-family: 'Overlock SC' , serif; */
+    font-family: 'Pathway Gothic One', sans-serif;
     font-size: 1.5rem;
     letter-spacing: .04em;
     padding : 1.5rem 2.75rem;
@@ -129,7 +130,7 @@ section{
     /* margin : .5rem auto 31px; */
     position: absolute;
     top: 8.5rem;
-    left: 9.6rem;
+    left: 45vw;
     border-radius: 50%; 
     box-shadow: 0px 0px 4px 5px rgba(255, 210, 29, 0.25);
 }
@@ -140,7 +141,7 @@ section{
     letter-spacing: .46em;
     position: absolute;
     top: 12.3rem;
-    left: 8.6rem;
+    left: 41vw;
 }
 
 .b4-headphone-box{
@@ -151,7 +152,7 @@ section{
     /* margin : .5rem auto 31px; */
     position: relative;
     top: 8.5rem;
-    left: 9.6rem;
+    left: 45vw;
     border-radius: 50%; 
     box-shadow: 0px 0px 4px 5px rgba(255, 210, 29, 0.25);
 }
@@ -163,5 +164,5 @@ section{
     letter-spacing: .46em;
     position: relative;
     top: 9.5rem;
-    left: 8.3rem;
+    left: 39vw;
 }
