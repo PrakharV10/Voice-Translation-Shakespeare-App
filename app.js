@@ -30,7 +30,7 @@ function errorHandler(error){
     console.log(error);
     // console.log("error occured");
     // alert("An error has occured, Please try again later!");
-    if(error.code == "429"){
+    if(error.code == 429){
         alert(error.message);
     }
     else{
@@ -46,7 +46,7 @@ recognition.onstart = function(){
 
 recognition.onresult = function(event){
     var index = event.resultIndex;
-    const transcript = event.results[index][0].transcript;
+    var transcript = event.results[index][0].transcript;
     inputContent.textContent = transcript;
 
     // readOutLoud(transcript); 
