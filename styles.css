@@ -63,7 +63,7 @@ header{
 }
 
 section{
-    height: 50vh;
+    height: 325px;
     overflow: hidden;
 
 }
@@ -94,7 +94,7 @@ section{
 
 .headphone-box{
     position: absolute;
-    top : 576px;
+    top : 568px;
     left: 43vw;
     text-align: center;
     background-color: var(--yellow);
