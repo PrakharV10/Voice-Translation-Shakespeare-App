@@ -94,7 +94,7 @@ section{
 
 .headphone-box{
     position: absolute;
-    top : 582px;
+    top : 576px;
     left: 43vw;
     text-align: center;
     background-color: var(--yellow);

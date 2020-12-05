@@ -19,6 +19,7 @@ const recognition = new SpeechRecognition();
 
 var url = "https://api.funtranslations.com/translate/yoda.json";
 // var url = "https://api.funtranslations.com/translate/pirate.json";
+// var url = "https://api.funtranslations.com/translate/shakespeare.json";
 var micClick = 0;
 var listenClick = 0;
 
@@ -28,8 +29,15 @@ function createURL(transcript){
 
 function errorHandler(error){
     console.log(error);
-    console.log("error occured");
-    alert("An error has occured, Please try again later!");
+    // console.log("error occured");
+    // alert("An error has occured, Please try again later!");
+    if(error.code == "429"){
+        alert(error.message);
+    }
+    else{
+        alert("An error has occured, Please try again later!");
+    }
+
 }
 
 // Speech Recognition Begins.
@@ -82,7 +90,7 @@ function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance();
     speech.text = message;
     speech.volume = 1;
-    speech.rate = 1;
+    speech.rate = .5;
     speech.pitch = 1;
 
     window.speechSynthesis.speak(speech);
