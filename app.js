@@ -17,9 +17,9 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 const recognition = new SpeechRecognition();
 
-var url = "https://api.funtranslations.com/translate/yoda.json";
+// var url = "https://api.funtranslations.com/translate/yoda.json";
 // var url = "https://api.funtranslations.com/translate/pirate.json";
-// var url = "https://api.funtranslations.com/translate/shakespeare.json";
+var url = "https://api.funtranslations.com/translate/shakespeare.json";
 var micClick = 0;
 var listenClick = 0;
 
@@ -90,7 +90,7 @@ function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance();
     speech.text = message;
     speech.volume = 1;
-    speech.rate = .5;
+    speech.rate = 1;
     speech.pitch = 1;
 
     window.speechSynthesis.speak(speech);
