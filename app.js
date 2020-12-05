@@ -18,6 +18,7 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const recognition = new SpeechRecognition();
 
 var url = "https://api.funtranslations.com/translate/yoda.json";
+// var url = "https://api.funtranslations.com/translate/pirate.json";
 var micClick = 0;
 var listenClick = 0;
 
@@ -47,7 +48,7 @@ recognition.onresult = function(event){
     .then(response => response.json())
     .then(json => {
         var outputText = json.contents.translated;
-        outputContent.textContent = outputText;
+        outputContent.textContent =  outputText;
         
     })
     .catch(errorHandler);

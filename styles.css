@@ -16,6 +16,7 @@ header{
     height : 325px;
 }
 
+
 .blackBg{
     background-color: #212121;
 }
@@ -93,13 +94,14 @@ section{
 
 .headphone-box{
     position: absolute;
-    top : 568px;
+    /* top : 568px; */
+    bottom: .5rem;
     left: 43vw;
     text-align: center;
     background-color: var(--yellow);
     width : 50px;
     padding : .5rem 0rem;
-    margin : .5rem auto 31px; 
+    margin : .5rem auto 25px; 
     border-radius: 50%; 
     border : 2px solid black;
 }
@@ -139,8 +141,8 @@ section{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     letter-spacing: .46em;
-    position: absolute;
-    top: 12.3rem;
+    position: absolute;;
+    top: 12.5rem;
     left: 41vw;
 }
 
@@ -165,4 +167,90 @@ section{
     position: relative;
     top: 9.5rem;
     left: 39vw;
+}
+
+footer{
+    text-align: center;
+    height: 3rem;
+}
+
+footer div{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    padding-top: .7rem;
+}
+
+@media only screen and (min-width:450px){
+    .mic-sub{
+        left: 42vw;
+    }
+
+    .headphone-sub{
+        left: 40.5vw;
+    }
+
+    .mic-box{
+        left: 46vw;
+    }
+
+    .headphone-box{
+        left: 45vw;
+    }
+}
+
+
+@media only screen and (min-width:650px){
+    header{
+        height: 50vh;
+    }
+
+    section{
+        height: 50vh;
+    }
+
+    .b4-mic-box{
+        left: 48vw;
+    }
+
+    .mic-sub{
+        left: 45.6vw;
+        font-size: 1.2rem;
+    }
+
+    .b4-headphone-box{
+        left: 48vw;
+    }
+
+    .headphone-sub{
+        left: 45vw;
+        font-size: 1.2rem;
+    }
+
+    .mic-box{
+        left: 48vw;
+    }
+
+    .headphone-box{
+        left: 48vw;
+    }
+}
+
+@media only screen and (min-width:1190px){
+    .mic-sub {
+        left: 46.2vw;
+    }
+
+    .headphone-sub{
+        left: 45.6vw;
+    }
+}
+
+@media only screen and (min-width:1400px){
+    .mic-sub {
+        left: 46.5vw;
+    }
+
+    .headphone-sub{
+        left: 45.9vw;
+    }
 }
