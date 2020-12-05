@@ -20,8 +20,7 @@ const recognition = new SpeechRecognition();
 // var url = "https://api.funtranslations.com/translate/yoda.json";
 // var url = "https://api.funtranslations.com/translate/pirate.json";
 var url = "https://api.funtranslations.com/translate/shakespeare.json";
-var micClick = 0;
-var listenClick = 0;
+
 
 function createURL(transcript){
     return url+ "?text=" + transcript;
@@ -82,8 +81,6 @@ function changeClass () {
     ListenBtn.className = "headphone-box";
     listenSub.className = "after-click";
     
-    micClick += 1;
-    listenClick +=1;
 }
 
 function readOutLoud(message){
