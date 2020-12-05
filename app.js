@@ -63,6 +63,9 @@ recognition.onresult = function(event){
     ListenBtn.addEventListener('click',function(){
         readOutLoud(outputContent.innerHTML);
     });
+
+    inputContent.textContent = "";
+    outputContent.textContent = "";
 }
 
 
