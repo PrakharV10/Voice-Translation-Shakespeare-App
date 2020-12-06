@@ -27,9 +27,6 @@ function createURL(transcript){
 }
 
 function errorHandler(error){
-    console.log(error);
-    // console.log("error occured");
-    // alert("An error has occured, Please try again later!");
     if(error.code == 429){
         alert(error.message);
     }
@@ -59,13 +56,7 @@ recognition.onresult = function(event){
         
     })
     .catch(errorHandler);
-    
-    ListenBtn.addEventListener('click',function(){
-        readOutLoud(outputContent.innerHTML);
-    });
 
-    inputContent.textContent = "";
-    outputContent.textContent = "";
 }
 
 
@@ -101,10 +92,15 @@ function readOutLoud(message){
 // Adding function of Mic button click
 
 micBtn.addEventListener('click', function(){
+    inputContent.textContent = "";
+    outputContent.textContent = "";
     setTimeout(changeClass,500);
     recognition.start();
+    
 });
 
 
-
+ListenBtn.addEventListener('click',function(){
+    readOutLoud(outputContent.innerHTML);
+ });
 
